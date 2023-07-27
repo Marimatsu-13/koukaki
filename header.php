@@ -16,31 +16,20 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
- 
-   <!-- <link
-      rel="stylesheet"
-      href="http://localhost:10016/wp-content/themes/foce-child/swiper/swiper-bundle.min.css"
-      />
-      <script src="http://localhost:10016/wp-content/themes/foce-child/swiper/swiper-bundle.min.js"></script>-->    
-    
-
-
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'foce' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <ul>
+	<header>
+        
+        <nav id="site-navigation" class="main-navigation">
+                <div class="burger">
+                    <span class="bar1"></span>
+                    <span class="bar"></span>
+                    <span class="bar2"></span>
+                </div>
+            <ul class="menu-navigation">
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
