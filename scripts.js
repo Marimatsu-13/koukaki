@@ -7,6 +7,33 @@ banner.addEventListener("wheel", function parallax(){
 }
 )
 
+let story = document.querySelector(".story span");
+let studio = document.querySelector("#studio span");
+let places = document.querySelector("#place span");
+let characters = document.querySelector("#characters span");
+let sectionStory = document.querySelector(".story");
+let sectionStudio = document.querySelector("#studio");
+let sectionplace = document.querySelector("#studio");
+let sectioncharacters = document.querySelector("#studio");
+
+
+
+sectionStory.addEventListener("wheel", function titleScroll1(){
+  story.style.opacity = "1";
+});
+
+sectionStudio.addEventListener("wheel", function titleScroll2(){
+  studio.style.opacity = "1";
+});
+
+sectionplace.addEventListener("wheel", function titleScroll3(){
+  places.style.opacity = "1";
+});
+
+sectioncharacters.addEventListener("wheel", function titleScroll4(){
+  characters.style.opacity = "1";
+});
+
 const swiper = new Swiper('.swiper', {
       effect: "coverflow",
       direction: "horizontal",

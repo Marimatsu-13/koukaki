@@ -22,20 +22,25 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 	<header>
-        
-        <nav id="site-navigation" class="main-navigation">
-                <div class="burger">
+        <div class="burger">
                     <span class="bar1"></span>
                     <span class="bar"></span>
                     <span class="bar2"></span>
-                </div>
+        </div>
+        <nav id="site-navigation" class="main-navigation">
             <ul class="menu-navigation">
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
+                <li class="hide"><a href="#story">Histoire</a></li>
+                <li class="hide"><a href="#characters">Personnages</a></li>
+                <li class="hide"><a href="#place">Lieu</a></li>
+                <li class="hide"><a href="#studio">Studio Koukaki</a></li>
+                <img class="background hide black-cat" src="\wp-content\themes\foce-child\images\Black-cat.png">
+                <img class="background hide blue-cat" src="\wp-content\themes\foce-child\images\Blue-cat.png">
+                <img class="background hide orange-cat" src="\wp-content\themes\foce-child\images\Orange-cat.png">
+                <img class="background2 hide sunflower" src="\wp-content\themes\foce-child\images\Sunflower.png">
+                <img class="background2 hide flower" src="\wp-content\themes\foce-child\images\Flower.png">
             </ul>
-
+            
 		</nav><!-- #site-navigation -->
+    
 	</header><!-- #masthead -->
